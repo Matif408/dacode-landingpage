@@ -25,6 +25,11 @@
 html{
     font-size: 62.25%;
 }
+@media(max-width:1208px){
+    html{
+        font-size: 50%;
+    }
+}
 body{
     font-family: "Circularstd",sans-serif;
     font-size: 1.6rem;
@@ -37,6 +42,10 @@ body{
 a{
     display: inline-block;
     text-decoration: none;
+}
+a:link
+a:visited {
+    font-family: inherit;
 }
 button{
     display: inline-block;
@@ -345,6 +354,7 @@ button{
 /* navigation */
 .nav_box{
     margin-bottom: 5rem;
+    padding: 0 2rem;
 }
 .nav{
     /* background-color: yellow; */
@@ -374,6 +384,7 @@ button{
 
 /* hero section */
 .hero_box{
+    padding: 0 2rem;
     margin-bottom: 5rem;
 }
 .hero{
@@ -404,7 +415,7 @@ button{
 /* section_services */
 .section_service{
     background-color: var(--light-cyan);
-    padding: 10rem 0;
+    padding: 10rem 2rem;
 }
 .service_description{
     max-width: 76rem;
@@ -420,6 +431,11 @@ button{
     gap: 3rem;
     flex-wrap: wrap;
 }
+@media(max-width:916px){
+    .service_card{
+        justify-content: center;
+    }
+}
 .card{
     flex-basis: 37rem;
     padding: 6rem 2rem 4rem 2rem;
@@ -432,8 +448,8 @@ button{
     width: 4.5rem;
     height: 4.5rem;
     border-radius: 50%;
-    background-color: var(--cyan);
-    opacity: 0.2;
+    background-color:#60E1CB44 ;
+    
     
     margin-bottom: 4.5rem;
     
@@ -449,7 +465,7 @@ button{
 
 /* portfolio */
 .portfolio{
-    padding: 6rem 0 20rem 0;
+    padding: 6rem 2rem 20rem 2rem;
 }
 .portfolio_btn{
     max-width: 95rem;
@@ -463,6 +479,7 @@ button{
     background-color: var(--cyan);
 }
 .portfolio_card{
+    padding: 0 2rem;
     display: flex;
     gap: 3.6rem;
 }
@@ -497,7 +514,7 @@ button{
 /* ////////////////////////////// */
 /* description */
 .description{
-    padding-top: 15rem;
+    padding: 15rem 2rem 0 2rem;
     
 }
 .description_box{
@@ -505,6 +522,10 @@ button{
     margin-inline: auto;
     display: flex;
     /* background-color: yellow; */
+    background-image: url(../images/Working\ Remotely.png);
+    background-size: 70rem;
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 .description_text{
     /* background-color: green; */
@@ -555,7 +576,7 @@ button{
 /* //////////////////////////// */
 /* section_client */
 .section_client{
-  padding: 10rem 0;
+  padding: 10rem 2rem;
 }
 .circle3{
     width: 6.4rem;
@@ -599,7 +620,7 @@ button{
 /* news&artical */
 .news_articalbox{
     background-color: var(--light-cyan);
-    padding: 9rem 0;
+    padding: 9rem 2rem;
 }
 .news_artical{
     /* background-color: yellow; */
@@ -629,7 +650,7 @@ button{
 /* footer */
 .footer{
     background-color: var(--cyan);
-    padding: 10rem 0;
+    padding: 10rem 2rem;
 }
 .footer_content{
     display: flex;
